@@ -35,10 +35,9 @@ The file needs to placed in the root directory of the repository and unzipped.
 Next, before starting the environment utilising the corresponding prebuilt app from Udacity  **Before running the code cell in the notebook**, change the `file_name` parameter to match the location of the Unity environment that you downloaded.
 
 ## Instructions
-Then run the [`DDPG_Continuous_Control.ipynb`](https://github.com/hortovanyi/DRLND-Continuous-Control/blob/master/DDPG_Continuous_Control.ipynb) notebook using the drlnd kernel to train the DDPG agent.
+Then run the Continuous_Control.ipynb notebook to train the DDPG agent.
 
-Once trained the model weights will be saved in the same directory in the files `checkpoint_actor.pth` and `checkpint_critic.pth`.
 
-The model weights are used by the [`Trained Agent.ipynb` ](https://github.com/hortovanyi/DRLND-Continuous-Control/blob/master/Trained%20Agent.ipynb) notebook against the simulator. 
 
-[Simulator Output Video](https://www.youtube.com/watch?v=N1vWkCfbEGQ)
+
+
