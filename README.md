@@ -1,6 +1,5 @@
 # DEEP-RL_Continuous_Control
 
-# DRLND Continuous Control Project
 ---
 This is the second project in the Udacity Deep Reinforcement Learning Nanodegree. 
 
@@ -35,9 +34,13 @@ The file needs to placed in the root directory of the repository and unzipped.
 Next, before starting the environment utilising the corresponding prebuilt app from Udacity  **Before running the code cell in the notebook**, change the `file_name` parameter to match the location of the Unity environment that you downloaded.
 
 ## Instructions
-Then run the Continuous_Control.ipynb notebook to train the DDPG agent.
+Then, place the file in the p2_continuous-control/ folder in the DRLND GitHub repository, and unzip (or decompress) the file.
 
+(For Windows users) Check out this link if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
 
+(For AWS) If you'd like to train the agent on AWS (and have not enabled a virtual screen), then please use this link (version 1) or this link (version 2) to obtain the "headless" version of the environment. You will not be able to watch the agent without enabling a virtual screen, but you will be able to train the agent. (To watch the agent, you should follow the instructions to enable a virtual screen, and then download the environment for the Linux operating system above.)
+
+After you have followed the instructions above, open Continuous_Control.ipynb (located in the p2_continuous-control/ folder in the DRLND GitHub repository) and follow the instructions to learn how to use the Python API to control the agent.
 
 
 
