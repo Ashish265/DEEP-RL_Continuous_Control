@@ -51,7 +51,7 @@ The Actor networks utilised two fully connected layers with 256 and 128 units wi
 The Critic networks utilised two fully connected layers with 256 and 128 units with leaky_relu activation. The critic network has  an initial dimension the size of the state size plus action size.
 
 ## Plot of rewards
-![result](./images/Training.png)
+![Training](./images/Training.png)
 
 
 
