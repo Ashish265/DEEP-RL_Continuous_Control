@@ -56,6 +56,6 @@ The Critic networks utilised two fully connected layers with 256 and 128 units w
 
 
 ## Ideas for Future Work
-Experimentation occurred on a few machines including a 6 core xeon Mac Pro with AMD GPUs, a 6th Gen I7 Intel with a GTX 1070 and an AMD 1700x with a RTX 2080. The later machine whilst having higher specifications ran significantly slower (needed to upgrade pytorch to work with the RTX 2080). However in all cases the training performance was slow and at times unstable. The GPUs were being under utilised. There is opportunity to move more code to being able to be GPU utilised without transfer of data back to the CPU.
 
-In addition Proximal Policy Optimization (PPO) and Distributed Distributional Deterministic Policy Gradients (D4PG) methods could be explored.
+- Experiment with other algorithms — Tuning the DDPG algorithm required a lot of trial and error. Perhaps another algorithm such as Trust Region Policy Optimization (TRPO), [Proximal Policy Optimization (PPO)](Proximal Policy Optimization Algorithms), or Distributed Distributional Deterministic Policy Gradients (D4PG) would be more robust.
+- Add prioritized experience replay — Rather than selecting experience tuples randomly, prioritized replay selects experiences based on a priority value that is correlated with the magnitude of error. This can improve learning by increasing the probability that rare and important experience vectors are sampled.
