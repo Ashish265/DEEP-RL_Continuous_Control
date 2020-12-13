@@ -26,8 +26,6 @@ For each time step and agent the Agent acts upon the state utilising a shared (a
 - max_t (int): maximum number of timesteps per episode
 - num_agents: number of agents in the environment
 
-Where
-`n_episodes=300`, `max_t=1000`
 
 Upon running this numerous times it became apparent that the environment would return done at 1000 timesteps. Higher values were irrelevant.
 
@@ -44,14 +42,7 @@ Upon running this numerous times it became apparent that the environment would r
 - N_TIME_STEPS (int): every n time step do update
 
 
-Where 
-`BUFFER_SIZE = int(1e6)`, `BATCH_SIZE = 128`, `GAMMA = 0.99`, `TAU = 1e-3`, `LR_ACTOR = 1e-4`, `LR_CRITIC = 1e-4`, `WEIGHT_DECAY = 0.0`, `N_LEARN_UPDATES = 10` and `N_TIME_STEPS = 20`
-
-Succesful training was also achieved with `N_LEARN_UPDATES = 8` in a shorter number of episodes but longer running due to no CUDA enabled GPUs on it. 
-
 ### Neural Networks
-
-Actor and Critic network models were defined in [`ddpg_model.py`](https://github.com/hortovanyi/DRLND-Continuous-Control/blob/master/ddpg_model.py).
 
 The Actor networks utilised two fully connected layers with 256 and 128 units with relu activation and tanh activation for the action space. The network has an initial dimension the same as the state size.
 
