@@ -32,15 +32,15 @@ Upon running this numerous times it became apparent that the environment would r
 
 ### DDPG Agent Hyper Parameters
 
-- BUFFER_SIZE (int): replay buffer size
-- BATCH_SIZ (int): mini batch size
-- GAMMA (float): discount factor
-- TAU (float): for soft update of target parameters
-- LR_ACTOR (float): learning rate for optimizer
-- LR_CRITIC (float): learning rate for optimizer
-- WEIGHT_DECAY (float): L2 weight decay
-- N_LEARN_UPDATES (int): number of learning updates
-- N_TIME_STEPS (int): every n time step do update
+- BUFFER_SIZE = int(1e6)  # replay buffer size
+- BATCH_SIZE = 256         # minibatch size
+- GAMMA = 0.99            # discount factor
+- TAU = 0.001              # for soft update of target parameters
+- LR_ACTOR = 1e-4         # learning rate of the actor
+- LR_CRITIC = 3e-4        # learning rate of the critic
+- WEIGHT_DECAY = 0.0001   # L2 weight decay
+- UPDATE_EVERY = 20        # how often to update the network
+- EPSILON = 1.0
 
 
 ### Neural Networks
